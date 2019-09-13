@@ -1,0 +1,104 @@
+body {
+    background: radial-gradient(circle closest-side, rgba(255,254,234,1) 50%, #AAD3DF) ;
+}
+
+.inputDiv {
+    display: flex;
+    justify-content: center;}
+
+/* //Input */
+.inputBox {
+    height: 1.5em;
+    width: 50em;
+    border-radius: 3px;
+    border: 1px  solid ;
+    transition: border 0.4s ease-out;
+    padding: 4px 4px;
+    font-family: Helvetica, Tahoma;
+    font-size: 19px;
+    color: #3e3e42;
+    background-color: azure;
+    /*background: rgba(15, 15, 15, 0.01);*/
+}
+
+.inputBox:hover {
+    border: 1px solid #6565e7;
+}
+
+.inputBox:focus {
+    border: 1px solid #6565e7;
+    box-shadow: 0px 0px 80px rgba(15, 15, 15, 0.2);
+}
+
+/* //Input Placeholder */
+.inputBox::placeholder {
+    font-family: Helvetica, Tahoma;
+    font-size: 19px;
+    color: rgba(15, 15, 15, 0.4);
+}
+
+.updateButton {
+    display: flex;
+    justify-content: center;
+}
+
+.surpriseMe {
+    padding: 10px 30px;
+    border: 0;
+    font-size: 22px;
+    border-radius: 3px;
+    font-family: Helvetica, Tahoma;
+    background-color: rgba(15, 15, 15, 0.1);
+    margin-top: 8px;
+    margin-bottom: 2px;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.surpriseMe:hover,
+.surpriseMe:focus {
+    background-color: #417cef;
+    color: white;
+}
+.lilError {
+    text-align: center;
+    font-family: Arial;
+    color: darkred;
+    margin-top: 5px;
+}
+
+.suggestion-item--active {
+    background-color: #417cef;
+    color: white;
+    font-family: Helvetica, Tahoma;
+    padding: 4px 4px;
+    font-size: 19px
+}
+
+.suggestion-item {
+    font-family: Helvetica, Tahoma;
+    border-bottom: 1px groove rgba(0,0,0,0.2);
+    border-right: 1px groove rgba(0,0,0,0.2);
+    border-left: 1px groove rgba(0,0,0,0.2);
+    background-color: rgba(15, 15, 15, 0.01);
+    display: block;
+    padding: 4px 4px;
+    font-size: 19px
+}
+
+.pinInstruction {
+    text-align: center;
+    border: 0;
+    font-size: 22px;
+    border-radius: 3px;
+    font-family: Helvetica, Tahoma;
+    background-color: rgba(15, 15, 15, 0.1);
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    font-family: "Arial";
+    font-size: 20px;
+}
