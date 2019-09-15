@@ -1,6 +1,6 @@
 FROM node:boron
 
-COPY . /src
+RUN mkdir -p /src
 
 WORKDIR /src
 
