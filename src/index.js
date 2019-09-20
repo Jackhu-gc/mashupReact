@@ -101,12 +101,13 @@ class App extends React.Component {
                         error.message
                     );
                 });
-
-            this.setState({restaurantInfo: []});
-            this.setState({zoomCentre: 12})
-            this.setState({centrePosition: this.state.latlong});
-            this.setState({errorState: false});
-        } else {
+            this.setState({
+                restaurantInfo: [],
+                zoomCentre: 12,
+                centrePosition: this.state.latlong,
+                errorState: false
+            });
+          } else {
             this.setState({errorState: true});
         }
     }
@@ -131,9 +132,11 @@ class App extends React.Component {
                     error.message
                 );
             });
-        this.setState({attractionsInfo: []});
-        this.setState({zoomCentre: 12})
-        this.setState({centrePosition: this.state.latlongRest});
+        this.setState({
+            attractionsInfo: [],
+            zoomCentre: 12,
+            centrePosition: this.state.latlongRest
+        });
     }
 
     doNotShowZero = (item) => {
@@ -145,8 +148,10 @@ class App extends React.Component {
     }
 
     receiveState = (latlong, state) => {
-        this.setState({latlong: latlong});
-        this.setState({errorState: state});
+        this.setState({
+            latlong: latlong,
+            errorState: state
+        });
     }
 
     foundImage(item) {
